@@ -11,6 +11,7 @@ import dagger.Provides
 
 /**
  * Created by claudiotezzin on 04/10/17.
+ *
  */
 
 @ClassIntro(
