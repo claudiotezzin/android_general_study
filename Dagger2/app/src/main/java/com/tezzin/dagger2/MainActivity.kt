@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     private val activityComponent: ActivityComponent by lazy {
         DaggerActivityComponent
                 .builder()
-                .applicationComponent(Dagger2Application.get(this).getComponent())
+                .applicationComponent((applicationContext as Dagger2Application).getComponent())
                 .build()
     }
 

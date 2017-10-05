@@ -28,10 +28,6 @@ class Dagger2Application : Application() {
                 .build()
     }
 
-    companion object {
-        fun get(context: Context): Dagger2Application = context.applicationContext as Dagger2Application
-    }
-
     override fun onCreate() {
         super.onCreate()
         applicationComponent.inject(this)
